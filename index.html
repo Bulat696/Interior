@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
      <head>
-          <meta charset="UTF-8" />
+          <meta charset="UTF-8">
           <title>interior</title>
 
-          <link rel="stylesheet" href="styles/reset.css" />
+          <link rel="stylesheet" href="styles/reset.css">
 
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link
-               href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
-               rel="stylesheet"
-          />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 
-          <link rel="stylesheet" href="styles/style.css" />
+          <link rel="stylesheet" href="styles/style.css">
      </head>
      <body>
-          <div class="module">
-               <div class="cover">
-                    <h1 class="cover-h1">
+          <div class="container">
+               <section>
+                    <h1>
                          Современные и стильные интерьеры для комфортной жизни
                     </h1>
                     <div class="background-image">
-                         <p class="background-image-text">
+                         <p class="background-image__text">
                               Мы - команда квалифицированных дизайнеров и
                               архитекторов, занимающихся разработкой и реализацией
                               дизайн-проектов
                          </p>
                     </div>
-               </div>
-               <div class="view-services">
-                    <h2 class="h2">О НАС</h2>
-                    <p class="view-services-studio">
+               </section>
+               <section>
+                    <h2>О НАС</h2>
+                    <p class="discription">
                          Студия основана в 2011 году. Полностью отдаемся
                          проектированию и реализации интерьеров. К нам обращаются за
                          уютом, индивидуальными решениями и практичностью. Находим
@@ -39,48 +36,50 @@
                          каждой детали — нацелены на результат.
                     </p>
                          <a class="serviceLink" href="/404">Посмотреть услуги</a>
-               </div>
-               <div class="projects">
-                    <h2 class="h2-projects" id="h2p">Проекты</h2>
-
-                    <div class="right-bank">
-                         <img class="right-bank__img" src="resources/Rectangle 2.png" alt="interior-1">
-                         <p class="right-bank__text">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
-                         <a class="right-bank__more" href="/404">Подробнее →</a>
-                    </div>
-                    <div class="right-bank">
-                         <img class="right-bank__img" src="resources/Rectangle 3.png" alt="interior-2">
-                         <p class="right-bank__text">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
-                         <a class="right-bank__more" href="/404">Подробнее →</a>
-                    </div>
-                    <div class="right-bank">
-                         <img class="right-bank__img" src="resources/Rectangle 4.png" alt="interior-3">
-                         <p class="right-bank__text">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
-                         <a class="right-bank__more" href="/404">Подробнее →</a>
-                    </div>
-                    <a class="all-projects" href="#h2p">Смотреть все проекты</a>
-               </div>
-               <div class="list_of_services">
-                    <h2 class="h2-services">Услуги</h2>
-                    <div>
-                    <div class="service">
-                         <img class="list_of_services__img" src="resources/Rectangle 5.jpg" alt="service-image-1">
+               </section>
+               <section class="section-long">
+                    <h2 id="h2p">ПРОЕКТЫ</h2>
+                    <ul class="projects">
+                         <li class="project">
+                              <img class="project__img" src="resources/Rectangle 2.png" alt="красивый диван">
+                              <p class="project__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
+                              <a class="project__link" href="/404">Подробнее →</a>
+                         </li>
+                         <li class="project">
+                              <img class="project__img" src="resources/Rectangle 3.png" alt="милый кофейный столик">
+                              <p class="project__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
+                              <a class="project__link" href="/404">Подробнее →</a>
+                         </li>
+                         <li class="project">
+                              <img class="project__img" src="resources/Rectangle 4.png" alt="стол с креслами">
+                              <p class="project__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
+                              <a class="project__link" href="/404">Подробнее →</a>
+                         </li>
+                              <a class="all-projects" href="#h2p">Смотреть все проекты</a>
+                    </ul>
+               </section>
+               <section class="list_of_services">
+                    <h2 class="h2-services">УСЛУГИ</h2>
+                    <ul>
+                    <li class="service">
+                         <img class="list_of_services__img" src="resources/Rectangle 5.jpg" alt="карандаш на бумаге">
                          <h3 class="h3-services">Планировочное решение — от 2500₽/м²</h3>
-                    </div>
-                    <div class="service">
-                         <img class="list_of_services__img" src="resources/Rectangle 6.jpg" alt="service-image-2">
+                    </li>
+                    <li class="service">
+                         <img class="list_of_services__img" src="resources/Rectangle 6.jpg" alt="Палитра PANTONE">
                          <h3 class="h3-services">Дизайн-проект — от 3000₽/м²</h3>
-                    </div>
-                    <div class="service">
-                         <img class="list_of_services__img" src="resources/Rectangle 7.jpg" alt="service-image-3">
+                    </li>
+                    <li class="service">
+                         <img class="list_of_services__img" src="resources/Rectangle 7.jpg" alt="Подготовка чертежа">
                          <h3 class="h3-services">Авторский надзор — от 30 000₽ в месяц</h3>
-                    </div>
-                    <div class="service">
-                         <img class="list_of_services__img" src="resources/Rectangle 8.jpg" alt="service-image-4">
+                    </li>
+                    <li class="service">
+                         <img class="list_of_services__img" src="resources/Rectangle 8.jpg" alt="Паллеты на складе">
                          <h3 class="h3-services">Комплектация — 5% от стоимости спецификации</h3>
-                    </div>
-                    </div>
-               </div>
+                    </li>
+                    </ul>
+               </section>
           </div>     
      </body>
 </html>
+
