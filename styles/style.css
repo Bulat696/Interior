@@ -2,7 +2,9 @@ body {
     width: 100%;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
-    background: #cdcccc;
+    background-color: #9c9898f5;
+    letter-spacing: -0.03em;
+    border: 2px solid #AD1818;
 }
 
 .container {
@@ -17,34 +19,31 @@ h1 {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    letter-spacing: -1.8px;
 }
 
 h2 {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
-    letter-spacing: -0.54px;
     color: #121212;
     text-transform: uppercase;
 }
 
 section {
-    padding: 150px 125px 0px 125px;
+    margin: 0 auto;
+    width: 1150px;
+ 
 }
 
-section:first-child {
-    padding-top: 128px;
-}
-
-.background-image {
+.bg-image {
     position: relative;
+    margin-bottom: 150px;
     width: 1150px;
     height: 500px;
-    background: url(../resources/Rectangle\ 1.png);
+    background: url(../resources/interior.png);
 }
 
-.background-image__text {
+.bg-image__text {
     position: absolute;
     bottom: 40px;
     left: 40px;
@@ -67,6 +66,7 @@ section:first-child {
 
 .serviceLink {
     display: block;
+    margin-bottom: 150px;
     padding: 20px 40px;
     width: 255px;
     height: 67px;
@@ -135,14 +135,14 @@ section:first-child {
     margin-top: 0;
 }
 
-.list_of_services {
+.services {
     width: 100%;
     padding-top: 151px;
     padding-left: 125px;
     background-color: #121212;
 }
 
-.h2-services {
+.services__h2 {
     margin-bottom: 34px;
     font-size: 18px;
     line-height: 25px;
@@ -150,7 +150,7 @@ section:first-child {
     color: #fff;
 }
 
-.h3-services {
+.service__h3 {
     font-size: 30px;
     line-height: 41px;
     letter-spacing: -0.9px;
@@ -166,6 +166,6 @@ section:first-child {
     padding-bottom: 150px;
 }
 
-.list_of_services__img {
+.service__img {
     margin-bottom: 15px;
 }
