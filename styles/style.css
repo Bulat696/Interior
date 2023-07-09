@@ -3,8 +3,7 @@ body {
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     background-color: #9c9898f5;
-    letter-spacing: -0.03em;
-    border: 2px solid #AD1818;
+    
 }
 
 .container {
@@ -12,6 +11,11 @@ body {
     width: 1400px;
     background: #FFFFFF;
 }
+
+h1, h2, h3, div, p, a {
+    color: #121212;
+    letter-spacing: -0.03em;
+}    
 
 h1 {
     margin-bottom: 30px;
@@ -25,14 +29,15 @@ h2 {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
-    color: #121212;
+    
     text-transform: uppercase;
 }
 
 section {
     margin: 0 auto;
     width: 1150px;
- 
+    
+
 }
 
 .bg-image {
@@ -52,19 +57,18 @@ section {
     color: #ffffff;
     font-size: 20px;
     line-height: 27.32px;
-    letter-spacing: -0.6px;
 }
 
 .discription {
     margin-bottom: 30px;
     width: 1048px;
     font-size: 45px;
-    color: #121212;
+    
     line-height: 61px;
-    letter-spacing: -0.03em;
+    
 }
 
-.serviceLink {
+.view-services {
     display: block;
     margin-bottom: 150px;
     padding: 20px 40px;
@@ -76,8 +80,12 @@ section {
     background-color: #ad1818;
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.6px;
     border-radius: 5px;
+}
+
+.view-services:hover {
+    background-color: #FFFFFF;
+    color: #ad1818;
 }
 
 .section-long {
@@ -94,14 +102,12 @@ section {
     margin: 15px 0;
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.9px;
-    color: #121212;
+    
 }
  
 .project__link {
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.6px;
     color: #AD1818;
     text-decoration: none;
 } 
@@ -118,7 +124,6 @@ section {
     font-size: 30px;
     line-height: 41px;
     text-align: center;
-    letter-spacing: -0.9px;
     color: #AD1818;
 }
 
@@ -142,18 +147,14 @@ section {
     background-color: #121212;
 }
 
-.services__h2 {
+.services h2 {
     margin-bottom: 34px;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: -0.54px;
     color: #fff;
 }
 
-.service__h3 {
+.service__title {
     font-size: 30px;
     line-height: 41px;
-    letter-spacing: -0.9px;
     color: #fff;
 }
 
