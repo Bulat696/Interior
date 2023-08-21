@@ -4,6 +4,7 @@ html {
 
 body {
     width: 100%;
+    min-width: 1400px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
     background: #ffffff;
@@ -19,6 +20,14 @@ a {
     letter-spacing: -0.03em;
 }  
 
+.nav__link,
+.view-services,
+.all-projects,
+.basement-text {
+    text-align: center;
+}
+
+
 header {
     margin: 0 auto;
     padding: 32.82px 124px 70px 124.65px;
@@ -33,7 +42,7 @@ header {
 .nav__link {
     display: inline-block;
     margin-left: 58px;
-    text-align: center;
+    
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
@@ -42,10 +51,6 @@ header {
 .nav__link:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     opacity: 0.5;
-}
-
-main {
-    min-width: 1400px;
 }
 
 section {
@@ -101,7 +106,7 @@ h2 {
     padding: 20px 0px;
     width: 255px;
     height: 67px;
-    text-align: center;
+    
     text-decoration: none;
     color: #ffffff;
     background-color: #ad1818;
@@ -116,7 +121,7 @@ h2 {
     color: #ad1818;
 }
 
-.section-long {
+.box-projects {
     margin-bottom: 150px;
 }
 
@@ -145,7 +150,7 @@ h2 {
     padding: 56px 0;
     width: 1150px;
     height: 153px;
-    text-align: center;
+    
     text-decoration: none;
     border-radius: 5px;
     border: 1px solid #AD1818;
@@ -168,7 +173,6 @@ h2 {
 }
 
 .bg-black {
-    min-width: 1400px;
     background-color: #121212;
 }
 
@@ -267,14 +271,14 @@ h2 {
     margin-bottom: 30px;
 }
 
-.basement {
+footer {
     margin: 0 auto;
     padding-top: 60px;
     width: 100%;
     background-color: #121212;
 }
 
-.basement__nav {
+.basement-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -282,7 +286,7 @@ h2 {
     padding-bottom: 87px;
 }
 
-.basement__nav__link {
+.basement-nav__link {
     display: inline-block;
     font-size: 18px;
     line-height: 25px;
@@ -290,14 +294,14 @@ h2 {
     color: #ffffff;
 }
 
-.basement__nav__link:hover {
+.basement-nav__link:hover {
     border-bottom: 1px solid #ffffff;
     opacity:0.5;
 }
 
-.basement__text {
+.basement-text {
     padding-bottom: 30px;
-    text-align: center;
+    
     font-size: 20px;
     line-height: 27px;
     color: #FFF;
