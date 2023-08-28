@@ -238,7 +238,7 @@ h2 {
  
 .contacts {
     margin-top: 186px;
-    margin-bottom: 161px;
+    margin-bottom: 152px;
     padding: 0;
     width: 1150px;
     position: relative;
@@ -263,7 +263,6 @@ h2 {
     width: 473px;
     font-size: 60px;
     line-height: 60px;
-    opacity: 1;
     text-decoration:none;    
 }
 
@@ -274,7 +273,7 @@ h2 {
 
 .contacts__links a:last-child {
     padding-top: 32px;
-    
+    padding-bottom: 8px;
 }
 
 footer {
@@ -293,11 +292,15 @@ footer {
 }
 
 .basement-nav__link {
-    display: inline-block;
+    margin-right: 3px;
     font-size: 18px;
     line-height: 25px;
     text-decoration: none;
     color: #ffffff;
+}
+
+.basement-nav__link:last-child {
+    margin-right: 17px;
 }
 
 .basement-nav__link:hover {
