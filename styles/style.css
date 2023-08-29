@@ -279,7 +279,7 @@ h2 {
 
 footer {
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 57px;
     width: 100%;
     background-color: #121212;
 }
@@ -299,6 +299,11 @@ footer {
     border-bottom: 1px solid transparent;
     text-decoration: none;
     color: #ffffff;
+}
+
+.bas-nav-link {
+    margin-left: 6px;
+    margin-right: 0;
 }
 
 .basement-nav__link:last-child {
