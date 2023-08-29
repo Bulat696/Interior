@@ -296,6 +296,7 @@ footer {
     margin-right: 3px;
     font-size: 18px;
     line-height: 25px;
+    border-bottom: 1px solid transparent;
     text-decoration: none;
     color: #ffffff;
 }
