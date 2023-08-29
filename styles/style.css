@@ -263,6 +263,7 @@ h2 {
     width: 473px;
     font-size: 60px;
     line-height: 60px;
+    border-bottom: 2px solid transparent;
     text-decoration:none;    
 }
 
