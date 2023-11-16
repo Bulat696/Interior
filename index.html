@@ -4,6 +4,7 @@
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>interior</title>
+          <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
 
           <link rel="stylesheet" href="styles/reset.css">
 
@@ -87,30 +88,84 @@
                     </div>     
                </section>     
                     
-               <!--<div class="bg-black">
-                    <section class="services">
-                         <h2 id="services">УСЛУГИ</h2>
-                         <ul>
-                              <li class="service">
-                                   <img class="service__img" src="resources/planning.jpg" alt="карандаш на бумаге">
-                                   <h3 class="service__title">Планировочное решение — от 2500₽/м²</h3>
-                              </li>
-                              <li class="service">
-                                   <img class="service__img" src="resources/design.jpg" alt="Палитра PANTONE">
-                                   <h3 class="service__title">Дизайн-проект — от 3000₽/м²</h3>
-                              </li>
-                              <li class="service">
-                                   <img class="service__img" src="resources/author.jpg" alt="Подготовка чертежа">
-                                   <h3 class="service__title">Авторский надзор — от 30 000₽ в месяц</h3>
-                              </li>
-                              <li class="service">
-                                   <img class="service__img" src="resources/complectation.jpg" alt="Паллеты на складе">
-                                   <h3 class="service__title">Комплектация — 5% от стоимости спецификации</h3>
-                              </li>
-                         </ul>
+               <div class="bg-black">
+                    <div class="container">
+                         <section class="services">
+                              <h2 id="services">УСЛУГИ</h2>
+                              <ul>
+                                   <li class="service">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/planning_mobile.png">
+                                             <source media="(max-width: 1199px)" srcset="resources/planning_tablet.png">
+                                             <img class="service__img" src="resources/planning.png" alt="карандаш на бумаге">  
+                                        </picture>
+                                        <p class="service__price">от 2500₽/м²</p>
+                                        <h3 class="service__title">Планировочное решение</h3>
+                                   </li>
+                                   <li class="service">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/design_mobile.png">
+                                             <source media="(max-width: 1199px)" srcset="resources/design_tablet.png">
+                                             <img class="service__img" src="resources/design.png" alt="Палитра PANTONE"> 
+                                        </picture>
+                                        <p class="service__price">от 3000₽/м²</p>
+                                        <h3 class="service__title">Дизайн-проект</h3>
+                                   </li>
+                                   <li class="service">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/author_mobile.png">
+                                             <source media="(max-width: 1199px)" srcset="resources/author_tablet.png">
+                                             <img class="service__img" src="resources/author.png" alt="Подготовка чертежа">
+                                        </picture>
+                                        <p class="service__price">от 30 000₽/мес</p>
+                                        <h3 class="service__title">Авторский надзор</h3>
+                                   </li>
+                                   <li class="service">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/complectation_mobile.png">
+                                             <source media="(max-width: 1199px)" srcset="resources/complectation_tablet.png">
+                                             <img class="service__img" src="resources/complectation.png" alt="Паллеты на складе">
+                                        </picture>
+                                        
+                                        <p class="service__price">5% от стоимости</p>
+                                        <h3 class="service__title">Комплектация</h3>
+                                   </li>
+                                   <a class="order_service" href="">Заказать услугу</a>
+                              </ul>
+                         </section>
+                    </div>
+               </div>
+               <div class="container">
+                    <section class="box-reviews">
+                         <h2>Отзывы</h2>
+                         <div class="reviews">
+                              <div class="feed-review">
+                                   <h3 class="username">Ксения, проект 65 кв.м.</h3>
+                                   <p class="review">Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим и даже больше! <br>
+
+                                        <br>Вам удалось это просто превосходно! Нам лишь осталось воплотить красоту, которую Вы нам создали в жизнь и поделиться с Вами результатом!
+                                        
+                                   </p>
+                              </div>
+                              <div class="feed-review">
+                                   <h3 class="username">Регина, проект 89 кв.м.</h3>
+                                   <p class="review">Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера! <br>
+
+                                       <br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
+                                   </p>
+                              </div>
+                              <div class="feed-review replica">
+                                   <h3 class="username">Яна, проект 120 кв.м.</h3>
+                                   <p class="review">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим. <br>
+
+                                        <br>В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело - ремонт!
+                                   </p>
+                              </div>
+                         </div>
                     </section>
                </div>
-               <section class="section-full-screen">
+               
+               <!--<section class="section-full-screen">
                     <div  class="full-screen">
                          <h3 class="full-screen__text">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
                     </div>
