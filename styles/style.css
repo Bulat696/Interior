@@ -45,6 +45,7 @@ h2 {
     padding-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
+    text-transform: uppercase;
 }
 
 .bg-image {
@@ -65,6 +66,8 @@ h2 {
     font-size: 20px;
     line-height: 27.32px;
 }
+
+/*О НАС*/
 
 .about-us {
     padding-bottom: 150px;
@@ -96,6 +99,8 @@ h2 {
     background-color: #FFFFFF;
     color: #ad1818;
 }
+
+/*ПРОЕКТЫ*/
 
 .box-projects {
     padding-bottom: 150px;
@@ -142,8 +147,7 @@ h2 {
     margin-top: 0;
 }
 
-
-/*
+/*УСЛУГИ*/
 
 .bg-black {
     background-color: #121212;
@@ -151,12 +155,44 @@ h2 {
 
 .services {
     padding-top: 151px;
+    padding-bottom: 150px;
 }
 
 .services h2 {
     padding-bottom: 33px;
     margin-left: 2px;
     color: #fff;
+}
+
+.services ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    position: relative;
+    padding-bottom: 80px;
+    width: calc(50% - 5px);
+}
+
+.service__img {
+    padding-bottom: 25px;
+}
+
+.service__price {
+    position: absolute;
+    top: 32px;
+    left: 30px;
+    display: inline-block;
+    padding: 5px 20px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: #ad1818;
 }
 
 .service__title {
@@ -166,20 +202,56 @@ h2 {
     color: #fff;
 }
 
-.service {
-    padding-bottom: 58px;
-    width: 1150px;
+.order_service {
+    margin-top: 24px;
+    padding: 56px 0;
+    width: 100%;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #AD1818;
 }
 
-.service:nth-last-child(1) {
-    margin-bottom: 0px;
-    padding-bottom: 148px;
+.order_service:hover {
+    color: #ad1818;
+    background: #fff;
 }
 
-.service__img {
-    padding-bottom: 15px;
+/*ОТЗЫВЫ*/
+
+.box-reviews {
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.feed-review {
+    width: calc(50% - 45px);
+}
+
+.replica {
+    width: calc( 75% - 25px);
+}
+
+.username {
+    padding-bottom: 14px;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.review {
+    font-size: 22px;
+    line-height: 30px;
+}
+/*display: block;
 .section-full-screen {
     position: relative;
     padding: 0;
@@ -275,6 +347,8 @@ h2 {
         left: 42px;
     }
 
+    /*О НАС*/
+
     .about-us {
         padding-bottom: 120px;
     }
@@ -293,6 +367,8 @@ h2 {
     .about-us__view-services {
         margin-left: 2px;
     }
+
+    /*ПРОЕКТЫ*/
 
     .box-projects {
         padding-bottom: 100px;
@@ -324,7 +400,70 @@ h2 {
     .projects :first-child {
         margin-top: 0;
     }
-    /**/
+
+    /*УСЛУГИ*/
+
+    .services {
+        padding-bottom: 120px;
+    }
+
+    .services h2 {
+        padding-bottom: 30px;
+    }
+
+    .service__img {
+        padding-bottom: 15px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50%;
+    }
+    
+    .service__price {
+        padding: 6px 26px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .service__title {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .order_service {
+        margin-top: 0;
+    }
+
+    /*ОТЗЫВЫ*/
+
+    .box-reviews {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .reviews {
+        gap: 10px;
+    }
+
+    .feed-review {
+        width: calc(50% - 10px);
+    }
+
+    .replica {
+        margin-top: 80px;
+        width: 75%;
+    }
+
+    .username {
+        padding-bottom: 25px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .review {
+        font-size: 20px;
+        line-height: 27px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -362,6 +501,8 @@ h2 {
         line-height: 22px;
     }
 
+    /*О НАС*/
+
     .about-us {
         padding-bottom: 80px;
     }
@@ -387,6 +528,8 @@ h2 {
         border-radius: 3.8px;
     }
     
+    /*ПРОЕКТЫ*/
+
     .box-projects {
         padding-bottom: 80px;
     }
@@ -419,4 +562,72 @@ h2 {
         margin-top: 0;
     }
     
+    /*УСЛУГИ*/
+
+    .services {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .services h2 {
+        padding-bottom: 20px;
+    }
+
+    .service {
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    .service__img {
+        padding-bottom: 10px;
+    }
+
+    .service__price {
+        top: 23px;
+        left: 24px;
+        height: 30px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .service__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .order_service {
+        padding: 35px 0;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    /*ОТЗЫВЫ*/
+
+    .box-reviews {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .box-reviews h2 {
+        padding-bottom: 22px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+
+    .feed-review {
+        width: 100%;
+    }
+
+    .replica {
+        margin-top: 0;
+    }
+
+    .username {
+        padding-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
+    }
 }
