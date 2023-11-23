@@ -35,10 +35,8 @@ a {
 
 h1 {
     padding-bottom: 30px;
-    width: 956px;
     font-size: 60px;
     line-height: 60px;
-    text-align: left;
 }
 
 h2 {
@@ -46,6 +44,11 @@ h2 {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 41px;
 }
 
 .bg-image {
@@ -61,7 +64,6 @@ h2 {
     bottom: 40px;
     left: 40px;
     width: 430px;
-    height: 81px;
     color: #ffffff;
     font-size: 20px;
     line-height: 27.32px;
@@ -83,9 +85,8 @@ h2 {
 
 .about-us__view-services {
     display: inline-block;
-    padding: 20px 0px;
-    width: 255px;
-    height: 67px;
+    padding: 20px 40px;
+    
     text-decoration: none;
     color: #ffffff;
     background-color: #ad1818;
@@ -106,10 +107,12 @@ h2 {
     padding-bottom: 150px;
 }
 
+.project__img {
+    margin-bottom: 14px;
+}
+
 .project__title {
-    padding: 14px 0;
-    font-size: 30px;
-    line-height: 41px;
+    margin-bottom: 14px;
 }
  
 .project__link {
@@ -121,7 +124,7 @@ h2 {
 }
 
 .all-projects {
-    display: block;
+    display: inline-block;
     margin-top: 90px;
     padding: 56px 0;
     width: 100%;
@@ -139,7 +142,7 @@ h2 {
     color: #FFFFFF;
 } 
 
-.projects .project {
+.project {
     margin-top: 90px;
 }
 
@@ -149,7 +152,7 @@ h2 {
 
 /*УСЛУГИ*/
 
-.bg-black {
+.services_bg-black {
     background-color: #121212;
 }
 
@@ -184,12 +187,9 @@ h2 {
     position: absolute;
     top: 32px;
     left: 30px;
-    display: inline-block;
     padding: 5px 20px;
-    height: 40px;
     font-size: 22px;
     line-height: 30px;
-    text-align: center;
     border-radius: 5px;
     color: #fff;
     background: #ad1818;
@@ -197,8 +197,6 @@ h2 {
 
 .service__title {
     margin-left: 3px;
-    font-size: 30px;
-    line-height: 41px;
     color: #fff;
 }
 
@@ -237,8 +235,8 @@ h2 {
     width: calc(50% - 45px);
 }
 
-.replica {
-    width: calc( 75% - 25px);
+.feed-review:last-child {
+    width: 75%;
 }
 
 .username {
@@ -251,6 +249,7 @@ h2 {
     font-size: 22px;
     line-height: 30px;
 }
+
 /*display: block;
 .section-full-screen {
     position: relative;
@@ -272,8 +271,6 @@ h2 {
     position: absolute;    
     bottom: 60px;    
     width: 443px;
-    font-size: 30px;
-    line-height: normal;
     color: #FFF;
 } 
  
@@ -328,8 +325,13 @@ h2 {
     }
 
     h1 {
-        width: 802px;
+        
         font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 34px;
     }
 
     .bg-image {
@@ -375,9 +377,7 @@ h2 {
     }
     
     .project__title {
-        padding-bottom: 10px;
-        font-size: 25px;
-        line-height: 34px;
+        margin-bottom: 10px;
     }
 
     .project__img {
@@ -393,7 +393,7 @@ h2 {
         
     }
 
-    .projects .project {
+    .project {
         margin-top: 80px;
     }
 
@@ -425,11 +425,6 @@ h2 {
         line-height: 27px;
     }
 
-    .service__title {
-        font-size: 25px;
-        line-height: 34px;
-    }
-
     .order_service {
         margin-top: 0;
     }
@@ -442,18 +437,14 @@ h2 {
     }
 
     .reviews {
-        gap: 10px;
+        column-gap: 10px;
+        row-gap: 80px;
     }
 
     .feed-review {
         width: calc(50% - 10px);
     }
-
-    .replica {
-        margin-top: 80px;
-        width: 75%;
-    }
-
+    
     .username {
         padding-bottom: 25px;
         font-size: 35px;
@@ -485,6 +476,11 @@ h2 {
         padding-bottom: 20px;
         font-size: 14px;
         line-height: 19px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .bg-image {
@@ -520,7 +516,7 @@ h2 {
 
     .about-us__view-services {
         margin-left: 0;
-        padding: 15.207px 0;
+        padding: 15.207px 30.41px;
         width: 100%;
         height: 51px;
         font-size: 16px;
@@ -534,11 +530,12 @@ h2 {
         padding-bottom: 80px;
     }
 
+    .project__img {
+        margin-bottom: 20px;
+    }
+
     .project__title {
-        padding-top: 20px;
-        padding-bottom: 11px;
-        font-size: 18px;
-        line-height: 25px;
+        margin-bottom: 11px;
     }
 
     .project__img {
@@ -554,7 +551,7 @@ h2 {
         line-height: 30px;
     }
     
-    .projects .project {
+    .project {
         margin-top: 49px;
     }
 
@@ -585,7 +582,6 @@ h2 {
     .service__price {
         top: 23px;
         left: 24px;
-        height: 30px;
         font-size: 14px;
         line-height: 19px;
     }
@@ -621,8 +617,8 @@ h2 {
         width: 100%;
     }
 
-    .replica {
-        margin-top: 0;
+    .feed-review:last-child {
+        width: 100%;
     }
 
     .username {
