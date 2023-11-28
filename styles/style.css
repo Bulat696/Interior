@@ -34,19 +34,19 @@ a {
 }
 
 h1 {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: 60px;
     line-height: 60px;
 }
 
-h2 {
-    padding-bottom: 30px;
+.h2 {
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
 
-h3 {
+.h3 {
     font-size: 30px;
     line-height: 41px;
 }
@@ -72,11 +72,11 @@ h3 {
 /*О НАС*/
 
 .about-us {
-    padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 .about-us__description {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     margin-left: 3px;
     width: 1048px;
     font-size: 45px;
@@ -86,7 +86,6 @@ h3 {
 .about-us__view-services {
     display: inline-block;
     padding: 20px 40px;
-    
     text-decoration: none;
     color: #ffffff;
     background-color: #ad1818;
@@ -104,7 +103,7 @@ h3 {
 /*ПРОЕКТЫ*/
 
 .box-projects {
-    padding-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 .project__img {
@@ -123,9 +122,20 @@ h3 {
     text-decoration: none;
 }
 
+.project {
+    margin-top: 90px;
+}
+
+.projects :first-child {
+    margin-top: 0;
+} 
+
+.projects {
+    margin-bottom: 90px;
+}
+
 .all-projects {
     display: inline-block;
-    margin-top: 90px;
     padding: 56px 0;
     width: 100%;
     height: 153px;
@@ -140,14 +150,6 @@ h3 {
 .all-projects:hover {
     background-color: #AD1818;
     color: #FFFFFF;
-} 
-
-.project {
-    margin-top: 90px;
-}
-
-.projects :first-child {
-    margin-top: 0;
 }
 
 /*УСЛУГИ*/
@@ -161,8 +163,8 @@ h3 {
     padding-bottom: 150px;
 }
 
-.services h2 {
-    padding-bottom: 33px;
+.services .h2 {
+    margin-bottom: 33px;
     margin-left: 2px;
     color: #fff;
 }
@@ -175,12 +177,12 @@ h3 {
 
 .service {
     position: relative;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
     width: calc(50% - 5px);
 }
 
 .service__img {
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .service__price {
@@ -201,6 +203,7 @@ h3 {
 }
 
 .order_service {
+    display: inline-block;
     margin-top: 24px;
     padding: 56px 0;
     width: 100%;
@@ -221,8 +224,8 @@ h3 {
 /*ОТЗЫВЫ*/
 
 .box-reviews {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .reviews {
@@ -240,7 +243,7 @@ h3 {
 }
 
 .username {
-    padding-bottom: 14px;
+    margin-bottom: 14px;
     font-size: 45px;
     line-height: 61px;
 }
@@ -329,7 +332,7 @@ h3 {
         font-size: 50px;
     }
 
-    h3 {
+    .h3 {
         font-size: 25px;
         line-height: 34px;
     }
@@ -352,10 +355,10 @@ h3 {
     /*О НАС*/
 
     .about-us {
-        padding-bottom: 120px;
+        margin-bottom: 120px;
     }
 
-    .about-us h2 {
+    .about-us .h2 {
         margin-left: 2px;
     }
 
@@ -373,7 +376,7 @@ h3 {
     /*ПРОЕКТЫ*/
 
     .box-projects {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
     
     .project__title {
@@ -390,7 +393,6 @@ h3 {
 
     .all-projects {
         margin-top: 100px;
-        
     }
 
     .project {
@@ -407,12 +409,12 @@ h3 {
         padding-bottom: 120px;
     }
 
-    .services h2 {
-        padding-bottom: 30px;
+    .services .h2 {
+        margin-bottom: 30px;
     }
 
     .service__img {
-        padding-bottom: 15px;
+        margin-bottom: 15px;
         width: 100%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -472,13 +474,13 @@ h3 {
         line-height: 31.621px;
     }
 
-    h2 {
+    .h2 {
         padding-bottom: 20px;
         font-size: 14px;
         line-height: 19px;
     }
 
-    h3 {
+    .h3 {
         font-size: 18px;
         line-height: 25px;
     }
@@ -503,7 +505,7 @@ h3 {
         padding-bottom: 80px;
     }
 
-    .about-us h2 {
+    .about-us .h2 {
         margin-left: 0;
     }
 
@@ -542,21 +544,24 @@ h3 {
         height: 250px;
     }
     
-    .all-projects {
-        margin-top: 60px;
-        padding: 37px 0;
-        height: 100px;
-        border-radius: 3.8px;
-        font-size: 22px;
-        line-height: 30px;
-    }
-    
     .project {
         margin-top: 49px;
     }
 
     .projects :first-child {
         margin-top: 0;
+    }
+    
+    .projects {
+        margin-bottom: 60px;
+    }
+    
+    .all-projects {
+        padding: 37px 0;
+        height: 100px;
+        border-radius: 3.8px;
+        font-size: 22px;
+        line-height: 30px;
     }
     
     /*УСЛУГИ*/
@@ -566,7 +571,7 @@ h3 {
         padding-bottom: 80px;
     }
 
-    .services h2 {
+    .services .h2 {
         padding-bottom: 20px;
     }
 
@@ -604,7 +609,7 @@ h3 {
         padding-bottom: 80px;
     }
 
-    .box-reviews h2 {
+    .box-reviews .h2 {
         padding-bottom: 22px;
     }
 
