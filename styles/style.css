@@ -541,7 +541,7 @@ h1 {
     }
 
     .project__img {
-        height: 250px;
+        max-height: 355px;
     }
     
     .project {
