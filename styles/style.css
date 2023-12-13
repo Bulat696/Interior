@@ -23,7 +23,7 @@ a {
 
 .nav__link,
 .about-us__view-services,
-.all-projects,
+.box-projects__all-projects,
 .basement-text {
     text-align: center;
 }
@@ -39,19 +39,19 @@ h1 {
     line-height: 60px;
 }
 
-.h2 {
+h2 {
     margin-bottom: 30px;
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
 }
 
-.h3 {
+h3 {
     font-size: 30px;
     line-height: 41px;
 }
 
-.bg-image {
+.main-poster__bg-image {
     position: relative;
     margin-bottom: 150px;
     width: 1150px;
@@ -59,11 +59,11 @@ h1 {
     background: url(../resources/interior.png);
 }
 
-.bg-image__text {
+.main-poster__text {
     position: absolute;
     bottom: 40px;
     left: 40px;
-    width: 430px;
+    max-width: 430px;
     color: #ffffff;
     font-size: 20px;
     line-height: 27.32px;
@@ -106,15 +106,15 @@ h1 {
     margin-bottom: 150px;
 }
 
-.project__img {
+.box-projects__img {
     margin-bottom: 14px;
 }
 
-.project__title {
+.box-projects__title {
     margin-bottom: 14px;
 }
  
-.project__link {
+.box-projects__link {
     margin-left: 1px;
     font-size: 20px;
     line-height: 27px;
@@ -122,19 +122,19 @@ h1 {
     text-decoration: none;
 }
 
-.project {
+.box-projects__project {
     margin-top: 90px;
 }
 
-.projects :first-child {
+.box-projects__projects :first-child {
     margin-top: 0;
 } 
 
-.projects {
+.box-projects__projects {
     margin-bottom: 90px;
 }
 
-.all-projects {
+.box-projects__all-projects {
     display: inline-block;
     padding: 56px 0;
     width: 100%;
@@ -147,45 +147,43 @@ h1 {
     color: #AD1818;
 }
 
-.all-projects:hover {
+.box-projects__all-projects:hover {
     background-color: #AD1818;
     color: #FFFFFF;
 }
 
 /*УСЛУГИ*/
 
-.services_bg-black {
+.dark-theme {
+    padding-top: 151px;
+    padding-bottom: 150px;
+    min-width: 1180px;
     background-color: #121212;
 }
 
 .services {
-    padding-top: 151px;
-    padding-bottom: 150px;
-}
-
-.services .h2 {
-    margin-bottom: 33px;
-    margin-left: 2px;
-    color: #fff;
-}
-
-.services ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.service {
+.h2 {
+    margin-bottom: 33px;
+    margin-left: 2px;
+    color: #fff;
+}
+
+.services__service {
     position: relative;
     margin-bottom: 80px;
     width: calc(50% - 5px);
 }
 
-.service__img {
+.services__img {
     margin-bottom: 25px;
 }
 
-.service__price {
+.services__price {
     position: absolute;
     top: 32px;
     left: 30px;
@@ -197,12 +195,12 @@ h1 {
     background: #ad1818;
 }
 
-.service__title {
+.services__title {
     margin-left: 3px;
     color: #fff;
 }
 
-.order_service {
+.order-service {
     display: inline-block;
     margin-top: 24px;
     padding: 56px 0;
@@ -216,7 +214,7 @@ h1 {
     background: #AD1818;
 }
 
-.order_service:hover {
+.order-service:hover {
     color: #ad1818;
     background: #fff;
 }
@@ -234,21 +232,21 @@ h1 {
     gap: 50px;
 }
 
-.feed-review {
+.reviews__feed-review {
     width: calc(50% - 45px);
 }
 
-.feed-review:last-child {
+.reviews__feed-review:last-child {
     width: 75%;
 }
 
-.username {
+.reviews__username {
     margin-bottom: 14px;
     font-size: 45px;
     line-height: 61px;
 }
 
-.review {
+.reviews__review {
     font-size: 22px;
     line-height: 30px;
 }
@@ -332,12 +330,12 @@ h1 {
         font-size: 50px;
     }
 
-    .h3 {
+    h3 {
         font-size: 25px;
         line-height: 34px;
     }
 
-    .bg-image {
+    .main-poster__bg-image {
         margin-bottom: 120px;
         width: 100%;
         height: 400px;
@@ -347,7 +345,7 @@ h1 {
         background-position: 50%;
     }
 
-    .bg-image__text {
+    .main-poster__tex {
         bottom: 30px;
         left: 42px;
     }
@@ -358,7 +356,7 @@ h1 {
         margin-bottom: 120px;
     }
 
-    .about-us .h2 {
+    .about-us h2 {
         margin-left: 2px;
     }
 
@@ -379,63 +377,61 @@ h1 {
         margin-bottom: 100px;
     }
     
-    .project__title {
-        margin-bottom: 10px;
-    }
-
-    .project__img {
+    .box-projects__img {
         width: 100%;
     }
 
-    .project__link {
+    .box-projects__title {
+        margin-bottom: 10px;
+    }
+
+    .box-projects__link {
         margin-left: 2px;
     }
 
-    .all-projects {
-        margin-top: 100px;
-    }
-
-    .project {
+    .box-projects__project {
         margin-top: 80px;
     }
 
-    .projects :first-child {
+    .box-projects__projects :first-child {
         margin-top: 0;
+    }
+
+    .box-projects__projects {
+        margin-bottom: 100px;
     }
 
     /*УСЛУГИ*/
 
-    .services {
+    .dark-theme {
         padding-bottom: 120px;
+        min-width:auto;
     }
 
-    .services .h2 {
+    .h2 {
         margin-bottom: 30px;
     }
 
-    .service__img {
+    .services__img {
         margin-bottom: 15px;
         width: 100%;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 50%;
     }
     
-    .service__price {
+    .services__price {
         padding: 6px 26px;
         font-size: 20px;
         line-height: 27px;
     }
 
-    .order_service {
+    .order-service {
         margin-top: 0;
     }
 
     /*ОТЗЫВЫ*/
 
     .box-reviews {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        margin-top: 120px;
+        margin-bottom: 120px;
     }
 
     .reviews {
@@ -443,17 +439,17 @@ h1 {
         row-gap: 80px;
     }
 
-    .feed-review {
+    .reviews__feed-review {
         width: calc(50% - 10px);
     }
     
-    .username {
-        padding-bottom: 25px;
+    .reviews__username {
+        margin-bottom: 25px;
         font-size: 35px;
         line-height: 48px;
     }
 
-    .review {
+    .reviews__review {
         font-size: 20px;
         line-height: 27px;
     }
@@ -468,33 +464,33 @@ h1 {
 
     h1 {
         margin-left: 1px;
-        padding-bottom: 25px;
+        margin-bottom: 25px;
         width: 100%;
         font-size: 30px;
         line-height: 31.621px;
     }
 
-    .h2 {
-        padding-bottom: 20px;
+    h2 {
+        margin-bottom: 20px;
         font-size: 14px;
         line-height: 19px;
     }
 
-    .h3 {
+    h3 {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .bg-image {
+    .main-poster__bg-image {
         margin-bottom: 80px;
         height: 304px;
         background-image: url(../resources/interior_mobile.png);
     }
 
-    .bg-image__text {
+    .main-poster__text {
         bottom: 15px;
         left: 15px;
-        width: 312px;
+        max-width: 312px;
         font-size: 16px;
         line-height: 22px;
     }
@@ -502,10 +498,10 @@ h1 {
     /*О НАС*/
 
     .about-us {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
     }
 
-    .about-us .h2 {
+    .about-us h2 {
         margin-left: 0;
     }
 
@@ -529,34 +525,31 @@ h1 {
     /*ПРОЕКТЫ*/
 
     .box-projects {
-        padding-bottom: 80px;
+        margin-bottom: 80px;
     }
 
-    .project__img {
+    .box-projects__img {
         margin-bottom: 20px;
+        max-height: 355px;
     }
 
-    .project__title {
+    .box-projects__title {
         margin-bottom: 11px;
     }
 
-    .project__img {
-        max-height: 355px;
-    }
-    
-    .project {
+    .box-projects__project {
         margin-top: 49px;
     }
 
-    .projects :first-child {
+    .box-projects__projects :first-child {
         margin-top: 0;
     }
     
-    .projects {
+    .box-projects__projects {
         margin-bottom: 60px;
     }
     
-    .all-projects {
+    .box-projects__all-projects {
         padding: 37px 0;
         height: 100px;
         border-radius: 3.8px;
@@ -566,37 +559,37 @@ h1 {
     
     /*УСЛУГИ*/
 
-    .services {
+    .dark-theme {
         padding-top: 80px;
         padding-bottom: 80px;
     }
 
-    .services .h2 {
-        padding-bottom: 20px;
+    .h2 {
+        margin-bottom: 20px;
     }
 
-    .service {
-        padding-bottom: 60px;
+    .services__service {
+        margin-bottom: 60px;
         width: 100%;
     }
 
-    .service__img {
-        padding-bottom: 10px;
+    .services__img {
+        margin-bottom: 10px;
     }
 
-    .service__price {
+    .services__price {
         top: 23px;
         left: 24px;
         font-size: 14px;
         line-height: 19px;
     }
 
-    .service__title {
+    .services__title {
         font-size: 18px;
         line-height: 25px;
     }
 
-    .order_service {
+    .order-service {
         padding: 35px 0;
         font-size: 22px;
         line-height: 30px;
@@ -605,12 +598,12 @@ h1 {
     /*ОТЗЫВЫ*/
 
     .box-reviews {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 
-    .box-reviews .h2 {
-        padding-bottom: 22px;
+    .box-reviews h2 {
+        margin-bottom: 22px;
     }
 
     .reviews {
@@ -618,16 +611,16 @@ h1 {
         row-gap: 80px;
     }
 
-    .feed-review {
+    .reviews__feed-review {
         width: 100%;
     }
 
-    .feed-review:last-child {
+    .reviews__feed-review:last-child {
         width: 100%;
     }
 
-    .username {
-        padding-bottom: 10px;
+    .reviews__username {
+        margin-bottom: 10px;
         font-size: 25px;
         line-height: 34px;
     }
