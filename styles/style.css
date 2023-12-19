@@ -1,188 +1,627 @@
-<!DOCTYPE html>
-<html lang="ru">
-     <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>interior</title>
-          <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+@import url(header.css);
+@import url(footer.css);
 
-          <link rel="stylesheet" href="styles/reset.css">
+html {
+    scroll-behavior: smooth;
+}
 
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    background: #ffffff;
+}
 
-          <link rel="stylesheet" href="styles/style.css">
-     </head>
-     <body>
-          <!--<header class="section-logo-nav">
-               <a href="#basement"><img class="logo" src="resources/Метрика.png" alt="логотип Метрика"></a>
-               <nav class="nav">
-                    <a href="#about-us" class="nav__link">О НАС</a>
-                    <a href="#all-projects" class="nav__link">ПРОЕКТЫ</a>
-                    <a href="#services" class="nav__link">УСЛУГИ</a>
-                    <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
-               </nav> 
-          </header>-->
-          <main>
-               <section class="hero">
-                    <div class="container">
-                         <h1 class="hero__title">
-                              Современные и стильные <br> интерьеры для комфортной жизни
-                         </h1>
-                         <div class="hero__image">
-                              <p class="hero__text">
-                                   Мы - команда квалифицированных дизайнеров и
-                                   архитекторов, занимающихся разработкой и реализацией
-                                   дизайн-проектов
-                              </p>
-                         </div>
-                    </div>     
-               </section>
-               <section class="about">
-                    <div class="container">
-                         <h2 id="about">О НАС</h2>
-                         <p class="about__description">
-                              Студия основана в 2011 году. Полностью отдаемся
-                              проектированию и реализации интерьеров. К нам обращаются за
-                              уютом, индивидуальными решениями и практичностью. Находим
-                              конструктивные решения для каждого интерьера, вплоть до
-                              каждой детали — нацелены на результат.
-                         </p>
-                         <a class="about__button" href="#services">Посмотреть услуги</a>
-                    </div>     
-               </section>
-               <section class="box-projects">
-                    <div class="container">
-                         <h2 id="projects">ПРОЕКТЫ</h2>
-                         <ul class="box">
-                              <li class="box__project">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/right_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/right_tablet.png">
-                                        <img class="box__image" src="resources/right.png" alt="красивый диван">
-                                   </picture>
-                                   <h3 class="box__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
-                                   <a class="box__link" href="https://xn--72-6kceetai1a3bgjnf2o.xn--p1ai/" target="_blank">Подробнее →</a>
-                              </li>
-                              <li class="box__project">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/norway_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/norway_tablet.png">
-                                        <img class="box__image" src="resources/norway.png" alt="милый кофейный столик">
-                                   </picture>
-                                   <h3 class="box__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
-                                   <a class="box__link" href="https://smu88.group/complexes/norvegian" target="_blank">Подробнее →</a>
-                              </li>
-                              <li class="box__project">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/lakes_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/lakes_tablet.png">
-                                        <img class="box__image" src="resources/lakes.png" alt="стол с креслами">
-                                   </picture>
-                                   <h3 class="box__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
-                                   <a class="box__link" href="https://sosnovo-lakes.ru/" target="_blank">Подробнее →</a>
-                              </li>
-                         </ul>
-                         <a class="box-projects__button" href="#projects">Смотреть все проекты</a>
-                    </div>     
-               </section>     
-                    
-               <section class="dark-theme">
-                    <div class="container">
-                         <h2 class="h2" id="services">УСЛУГИ</h2>
-                         <ul class="services">
-                              <li class="services__service">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/planning_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/planning_tablet.png">
-                                        <img class="services__img" src="resources/planning.png" alt="карандаш на бумаге">  
-                                   </picture>
-                                   <p class="services__price">от 2500₽/м²</p>
-                                   <h3 class="services__title">Планировочное решение</h3>
-                              </li>
-                              <li class="services__service">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/design_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/design_tablet.png">
-                                        <img class="services__img" src="resources/design.png" alt="Палитра PANTONE"> 
-                                   </picture>
-                                   <p class="services__price">от 3000₽/м²</p>
-                                   <h3 class="services__title">Дизайн-проект</h3>
-                              </li>
-                              <li class="services__service">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/author_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/author_tablet.png">
-                                        <img class="services__img" src="resources/author.png" alt="Подготовка чертежа">
-                                   </picture>
-                                   <p class="services__price">от 30 000₽/мес</p>
-                                   <h3 class="services__title">Авторский надзор</h3>
-                              </li>
-                              <li class="services__service">
-                                   <picture>
-                                        <source media="(max-width: 767px)" srcset="resources/complectation_mobile.png">
-                                        <source media="(max-width: 961px)" srcset="resources/complectation_tablet.png">
-                                        <img class="services__img" src="resources/complectation.png" alt="Паллеты на складе">
-                                   </picture>
-                                   <p class="services__price">5% от стоимости</p>
-                                   <h3 class="services__title">Комплектация</h3>
-                              </li>
-                         </ul>
-                         <a class="dark-theme__button" href="">Заказать услугу</a>
-                    </div>
-               </section>
-               <section class="box-reviews">
-                    <div class="container">
-                         <h2>Отзывы</h2>
-                         <div class="reviews">
-                              <div class="reviews__feed-review">
-                                   <h4 class="reviews__username">Ксения, проект 65 кв.м.</h4>
-                                   <p class="reviews__description">Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим и даже больше! <br>
+h1,
+h2,
+h3,
+div,
+p,
+a {
+    color: #121212;
+    letter-spacing: -0.03em;
+}  
 
-                                        <br>Вам удалось это просто превосходно! Нам лишь осталось воплотить красоту, которую Вы нам создали в жизнь и поделиться с Вами результатом!
-                                        
-                                   </p>
-                              </div>
-                              <div class="reviews__feed-review">
-                                   <h4 class="reviews__username">Регина, проект 89 кв.м.</h4>
-                                   <p class="reviews__description">Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера! <br>
+.nav__link,
+.about__button,
+.box-projects__button,
+.basement-text {
+    text-align: center;
+}
 
-                                       <br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
-                                   </p>
-                              </div>
-                              <div class="reviews__feed-review">
-                                   <h4 class="reviews__username">Яна, проект 120 кв.м.</h4>
-                                   <p class="reviews__description">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим. <br>
+.container {
+    margin: 0 auto;
+    width: 1150px;
+}
 
-                                        <br>В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело - ремонт!
-                                   </p>
-                              </div>
-                         </div>
-                    </div>
-               </section>
-               
-               <!--<section class="section-full-screen">
-                    <div  class="full-screen">
-                         <h3 class="full-screen__text">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
-                    </div>
-               </section>
-               <section class="contacts">
-                    <h2 id="contacts">КОНТАКТЫ</h2>
-                    <div class="contacts__links">
-                         <a href="tel:+79358954535">+7 935 895-45-35</a>
-                         <a href="mailto:hello@mail.com">hello@mail.com</a>
-                    </div>
-               </section>-->
-          </main>
-          <!--<footer>
-               <div class="basement-nav">
-                    <a href="#about-us" class="basement-nav__link bas-nav-link">О НАС</a>
-                    <a href="#all-projects" class="basement-nav__link">ПРОЕКТЫ</a>
-                    <a href="#services" class="basement-nav__link">УСЛУГИ</a>
-                    <a href="#contacts" class="basement-nav__link">КОНТАКТЫ</a>
-               </div>
-               <p id="basement" class="basement-text">студия дизайна интерьера Метрика — 2023</p>
-          </footer>-->
-     </body>
-</html>
+h1 {
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 41px;
+}
+
+.hero__image {
+    position: relative;
+    margin-bottom: 150px;
+    width: 1150px;
+    height: 500px;
+    background: url(../resources/interior.png);
+}
+
+.hero__text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 430px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 27.32px;
+}
+
+/*О НАС*/
+
+.about {
+    margin-bottom: 150px;
+}
+
+.about__description {
+    margin-bottom: 30px;
+    margin-left: 3px;
+    width: 1048px;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.about__button {
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ad1818;
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 5px;
+}
+
+.about__button:hover {
+    border: 1px solid #AD1818;
+    background-color: #FFFFFF;
+    color: #ad1818;
+}
+
+/*ПРОЕКТЫ*/
+
+.box-projects {
+    margin-bottom: 150px;
+}
+
+.box__image {
+    margin-bottom: 14px;
+}
+
+.box__title {
+    margin-bottom: 14px;
+}
+ 
+.box__link {
+    margin-left: 1px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #AD1818;
+    text-decoration: none;
+}
+
+.box__project {
+    margin-top: 90px;
+}
+
+.box:first-child {
+    margin-top: 0;
+} 
+
+.box {
+    margin-bottom: 90px;
+}
+
+.box-projects__button {
+    display: inline-block;
+    padding: 56px 0;
+    width: 100%;
+    height: 153px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #AD1818;
+    font-size: 30px;
+    line-height: 41px;
+    color: #AD1818;
+}
+
+.box-projects__button:hover {
+    background-color: #AD1818;
+    color: #FFFFFF;
+}
+
+/*УСЛУГИ*/
+
+.dark-theme {
+    padding-top: 151px;
+    padding-bottom: 150px;
+    min-width: 1180px;
+    background-color: #121212;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.h2 {
+    margin-bottom: 33px;
+    margin-left: 2px;
+    color: #fff;
+}
+
+.services__service {
+    position: relative;
+    margin-bottom: 80px;
+    width: calc(50% - 5px);
+}
+
+.services__img {
+    margin-bottom: 25px;
+}
+
+.services__price {
+    position: absolute;
+    top: 32px;
+    left: 30px;
+    padding: 5px 20px;
+    font-size: 22px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background: #ad1818;
+}
+
+.services__title {
+    margin-left: 3px;
+    color: #fff;
+}
+
+.dark-theme__button {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 56px 0;
+    width: 100%;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background: #AD1818;
+}
+
+.dark-theme__button:hover {
+    color: #ad1818;
+    background: #fff;
+}
+
+/*ОТЗЫВЫ*/
+
+.box-reviews {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.reviews__feed-review {
+    width: calc(50% - 45px);
+}
+
+.reviews__feed-review:last-child {
+    width: 75%;
+}
+
+.reviews__username {
+    margin-bottom: 14px;
+    font-size: 45px;
+    line-height: 61px;
+}
+
+.reviews__description {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+/*display: block;
+.section-full-screen {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 717px;
+    background-image: url(../resources/double-bed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.full-screen {
+    margin: 0 auto;
+    width: 1150px;   
+}
+
+.full-screen__text {
+    position: absolute;    
+    bottom: 60px;    
+    width: 443px;
+    color: #FFF;
+} 
+ 
+.contacts {
+    position: relative;
+    margin-top: 186px;
+    margin-bottom: 152px;
+    padding: 0;
+    width: 1150px;
+}
+
+.contacts:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -36px;
+    margin-left: -4px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../resources/icon-phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.contacts__links a {
+    display:block;
+    width: 473px;
+    font-size: 60px;
+    line-height: 60px;
+    border-bottom: 2px solid transparent;
+    text-decoration:none;    
+}
+
+.contacts__links a:hover {
+    border-bottom: 2px solid #121212;
+    opacity:0.5
+}
+
+.contacts__links a:last-child {
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+*/
+
+@media (max-width: 961px) {
+   
+    .container {
+        padding-left: 17px;
+        padding-right: 17px;
+        width: 100%;
+    }
+
+    h1 {
+        
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .hero__image {
+        margin-bottom: 120px;
+        width: 100%;
+        height: 400px;
+        background-image: url(../resources/interior_tablet.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    .hero__text {
+        bottom: 30px;
+        left: 42px;
+    }
+
+    /*О НАС*/
+
+    .about {
+        margin-bottom: 120px;
+    }
+
+    .about h2 {
+        margin-left: 2px;
+    }
+
+    .about__description {
+        margin-left: 5px;
+        width: 690px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .about__button {
+        margin-left: 2px;
+    }
+
+    /*ПРОЕКТЫ*/
+
+    .box-projects {
+        margin-bottom: 100px;
+    }
+    
+    .box__image {
+        width: 100%;
+    }
+
+    .box__title {
+        margin-bottom: 10px;
+    }
+
+    .box__link {
+        margin-left: 2px;
+    }
+
+    .box__project {
+        margin-top: 80px;
+    }
+
+    .box:first-child {
+        margin-top: 0;
+    }
+
+    .box {
+        margin-bottom: 100px;
+    }
+
+    /*УСЛУГИ*/
+
+    .dark-theme {
+        padding-bottom: 120px;
+        min-width:auto;
+    }
+
+    .h2 {
+        margin-bottom: 30px;
+    }
+
+    .services__img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .services__price {
+        padding: 6px 26px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .dark-theme__button {
+        margin-top: 0;
+    }
+
+    /*ОТЗЫВЫ*/
+
+    .box-reviews {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .reviews {
+        column-gap: 10px;
+        row-gap: 80px;
+    }
+
+    .reviews__feed-review {
+        width: calc(50% - 10px);
+    }
+    
+    .reviews__username {
+        margin-bottom: 25px;
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .reviews__description {
+        font-size: 20px;
+        line-height: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .container {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    h1 {
+        margin-left: 1px;
+        margin-bottom: 25px;
+        width: 100%;
+        font-size: 30px;
+        line-height: 31.621px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .hero__image {
+        margin-bottom: 80px;
+        height: 304px;
+        background-image: url(../resources/interior_mobile.png);
+    }
+
+    .hero__text {
+        bottom: 15px;
+        left: 15px;
+        max-width: 312px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /*О НАС*/
+
+    .about {
+        margin-bottom: 80px;
+    }
+
+    .about h2 {
+        margin-left: 0;
+    }
+
+    .about__description {
+        margin-left: 0;
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .about__button {
+        margin-left: 0;
+        padding: 15.207px 30.41px;
+        width: 100%;
+        height: 51px;
+        font-size: 16px;
+        line-height: 22px;
+        border-radius: 3.8px;
+    }
+    
+    /*ПРОЕКТЫ*/
+
+    .box-projects {
+        margin-bottom: 80px;
+    }
+
+    .box__image {
+        margin-bottom: 20px;
+        max-height: 355px;
+    }
+
+    .box__title {
+        margin-bottom: 11px;
+    }
+
+    .box__project {
+        margin-top: 49px;
+    }
+
+    .box:first-child {
+        margin-top: 0;
+    }
+    
+    .box {
+        margin-bottom: 60px;
+    }
+    
+    .box-projects__button {
+        padding: 37px 0;
+        height: 100px;
+        border-radius: 3.8px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    /*УСЛУГИ*/
+
+    .dark-theme {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .h2 {
+        margin-bottom: 20px;
+    }
+
+    .services__service {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .services__img {
+        margin-bottom: 10px;
+    }
+
+    .services__price {
+        top: 23px;
+        left: 24px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .services__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .dark-theme__button {
+        padding: 35px 0;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    /*ОТЗЫВЫ*/
+
+    .box-reviews {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .box-reviews h2 {
+        margin-bottom: 22px;
+    }
+
+    .reviews {
+        flex-direction: column;
+        row-gap: 80px;
+    }
+
+    .reviews__feed-review {
+        width: 100%;
+    }
+
+    .reviews__feed-review:last-child {
+        width: 100%;
+    }
+
+    .reviews__username {
+        margin-bottom: 10px;
+        font-size: 25px;
+        line-height: 34px;
+    }
+}
