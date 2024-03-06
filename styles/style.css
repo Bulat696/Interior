@@ -23,14 +23,15 @@ a {
 
 .nav__link,
 .about__button,
-.box-projects__button,
+.projects__button,
 .basement-text {
     text-align: center;
 }
 
 .container {
     margin: 0 auto;
-    width: 1150px;
+    padding: 0 15px;
+    width: 1180px;
 }
 
 h1 {
@@ -51,7 +52,7 @@ h3 {
     line-height: 41px;
 }
 
-.hero__image {
+.hero__box {
     position: relative;
     margin-bottom: 150px;
     width: 1150px;
@@ -92,6 +93,7 @@ h3 {
     font-size: 20px;
     line-height: 27px;
     border-radius: 5px;
+    border: 1px solid transparent;
 }
 
 .about__button:hover {
@@ -102,7 +104,7 @@ h3 {
 
 /*ПРОЕКТЫ*/
 
-.box-projects {
+.projects {
     margin-bottom: 150px;
 }
 
@@ -113,7 +115,7 @@ h3 {
 .box__title {
     margin-bottom: 14px;
 }
- 
+
 .box__link {
     margin-left: 1px;
     font-size: 20px;
@@ -134,7 +136,7 @@ h3 {
     margin-bottom: 90px;
 }
 
-.box-projects__button {
+.projects__button {
     display: inline-block;
     padding: 56px 0;
     width: 100%;
@@ -147,7 +149,7 @@ h3 {
     color: #AD1818;
 }
 
-.box-projects__button:hover {
+.projects__button:hover {
     background-color: #AD1818;
     color: #FFFFFF;
 }
@@ -157,7 +159,7 @@ h3 {
 .dark-theme {
     padding-top: 151px;
     padding-bottom: 150px;
-    min-width: 1180px;
+    min-width: max-content;
     background-color: #121212;
 }
 
@@ -232,11 +234,11 @@ h3 {
     gap: 50px;
 }
 
-.reviews__feed-review {
+.reviews__review {
     width: calc(50% - 45px);
 }
 
-.reviews__feed-review:last-child {
+.reviews__review:last-child {
     width: 75%;
 }
 
@@ -251,55 +253,127 @@ h3 {
     line-height: 30px;
 }
 
-/*display: block;
-.section-full-screen {
+/*галерея проектов*/
+
+.gallery {
     position: relative;
-    padding: 0;
-    width: 100%;
     height: 717px;
-    background-image: url(../resources/double-bed.png);
+}
+
+.gallery__title-wrapper {
+    position: absolute;
+    top: 67px;
+    width: 100%;
+    z-index: 100;
+}
+
+.gallery__title {
+    font-size: 22px;
+    line-height: 30px;
+    color: white;    
+}
+
+.gallery__slide {
+    opacity: 0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    min-width: max-content;
+    height: 100%;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
 }
 
-.full-screen {
-    margin: 0 auto;
-    width: 1150px;   
+.gallery__slide_active {
+    opacity: 1;
 }
 
-.full-screen__text {
-    position: absolute;    
-    bottom: 60px;    
-    width: 443px;
-    color: #FFF;
-} 
- 
+.bed {
+    background-image: url(../resources/double-bed.png);
+}
+
+.yellow-armchair {
+    background-image: url(../resources/yellow_armchair.png);
+}
+
+.living {
+    background-image: url(../resources/living_room.png);
+}
+
+.scandinavian {
+    background-image: url(../resources/scandinavian_cuisine.png);
+}
+
+.gallery__slide-title {
+    position: absolute;
+    bottom: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.gallery__control-wrapper {
+    position: absolute;
+    bottom: 162px;
+    width: 100%;
+}
+
+.gallery__control-next,
+.gallery__control-prev {
+    margin-right: 14px;
+    padding: 3px 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.gallery__control-prev:hover,
+.gallery__control-next:hover {
+    opacity: 0.5;
+}
+
+/*КОНТАКТЫ*/
+
 .contacts {
-    position: relative;
-    margin-top: 186px;
+    margin-top: 150px;
     margin-bottom: 152px;
-    padding: 0;
-    width: 1150px;
 }
 
-.contacts:before {
+.contacts__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 74px;
+    width: 990px;
+}
+
+.tel:before,
+.mail:before {
     content: '';
     display: block;
     position: absolute;
-    top: -36px;
+    top: -46px;
     margin-left: -4px;
     width: 24px;
     height: 24px;
-    background-image: url(../resources/icon-phone.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
+.tel:before {
+    background-image: url(../resources/icon-phone_.png);
+}
+
+.mail:before {
+    background-image: url(../resources/icon_email.png);
+}
+
 .contacts__links a {
-    display:block;
-    width: 473px;
     font-size: 60px;
     line-height: 60px;
     border-bottom: 2px solid transparent;
@@ -311,14 +385,14 @@ h3 {
     opacity:0.5
 }
 
-.contacts__links a:last-child {
+/*.contacts__links a:last-child {
     padding-top: 32px;
     padding-bottom: 8px;
 }
+display:block;
 */
-
 @media (max-width: 961px) {
-   
+
     .container {
         padding-left: 17px;
         padding-right: 17px;
@@ -335,7 +409,7 @@ h3 {
         line-height: 34px;
     }
 
-    .hero__image {
+    .hero__box {
         margin-bottom: 120px;
         width: 100%;
         height: 400px;
@@ -373,7 +447,7 @@ h3 {
 
     /*ПРОЕКТЫ*/
 
-    .box-projects {
+    .projects {
         margin-bottom: 100px;
     }
     
@@ -439,7 +513,7 @@ h3 {
         row-gap: 80px;
     }
 
-    .reviews__feed-review {
+    .reviews__review {
         width: calc(50% - 10px);
     }
     
@@ -453,6 +527,48 @@ h3 {
         font-size: 20px;
         line-height: 27px;
     }
+
+    /*галерея проектов*/
+
+    .gallery {
+        height: 536px;
+    }
+
+    .gallery__title-wrapper {
+        top: 80px;
+        padding-left: 50px;
+    }
+
+    .gallery__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .gallery__slide-title {
+        bottom: 80px;
+        padding-left: 50px;
+    }
+
+    .gallery__control-wrapper {
+        bottom: 152px;
+        padding-left: 41px;
+    }
+
+    /*КОНТАКТЫ*/
+
+    .contacts {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .contacts__links {
+        width: 730px;
+    }
+
+    .contacts__links a {
+        font-size: 45px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -481,7 +597,7 @@ h3 {
         line-height: 25px;
     }
 
-    .hero__image {
+    .hero__box {
         margin-bottom: 80px;
         height: 304px;
         background-image: url(../resources/interior_mobile.png);
@@ -524,7 +640,7 @@ h3 {
     
     /*ПРОЕКТЫ*/
 
-    .box-projects {
+    .projects {
         margin-bottom: 80px;
     }
 
@@ -549,7 +665,7 @@ h3 {
         margin-bottom: 60px;
     }
     
-    .box-projects__button {
+    .projects__button {
         padding: 37px 0;
         height: 100px;
         border-radius: 3.8px;
@@ -611,11 +727,11 @@ h3 {
         row-gap: 80px;
     }
 
-    .reviews__feed-review {
+    .reviews__review {
         width: 100%;
     }
 
-    .reviews__feed-review:last-child {
+    .reviews__review:last-child {
         width: 100%;
     }
 
@@ -623,5 +739,85 @@ h3 {
         margin-bottom: 10px;
         font-size: 25px;
         line-height: 34px;
+    }
+
+    /*галерея проектов*/
+
+    .gallery {
+        height: 408px;
+    }
+
+    .gallery__title-wrapper {
+        top: 61px;
+        padding-left: 0;
+    }
+
+    .gallery__title {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .gallery__slide-title {
+        bottom: 60px;
+        padding-left: 0;
+    }
+
+    /*.bed {
+        background-image: url(../resources/double-bed_mobile.png);
+    }*/
+
+    .gallery__control-wrapper {
+    
+
+    bottom: 50%;
+    padding-left: 0;
+    }
+
+    .gallery__controls {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gallery__control-next,
+    .gallery__control-prev {
+        margin-right: 0;
+        padding: 2.5px 7.5px;
+    }
+
+    /*КОНТАКТЫ*/
+
+    .contacts {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .contacts__links {
+        flex-direction: column;
+        row-gap: 58px;
+        margin-top: 58px;
+        width: 100%;
+    }
+
+    .tel:before,
+    .mail:before {
+        margin-left: 3px;
+        width: 18px;
+        height: 18px;
+        
+    }
+
+    .tel:before {
+        top: -33px;
+        background-image: url(../resources/icon-phone_mobile.png);
+    }
+
+    .mail:before {
+        top: 65px;
+        background-image: url(../resources/icon_email_mobile.png);
+    }
+    
+    .contacts__links a {
+        font-size: 35px;
+        line-height: 45.62px;
     }
 }
