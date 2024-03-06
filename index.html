@@ -30,7 +30,7 @@
                          <h1 class="hero__title">
                               Современные и стильные <br> интерьеры для комфортной жизни
                          </h1>
-                         <div class="hero__image">
+                         <div class="hero__box">
                               <p class="hero__text">
                                    Мы - команда квалифицированных дизайнеров и
                                    архитекторов, занимающихся разработкой и реализацией
@@ -52,7 +52,7 @@
                          <a class="about__button" href="#services">Посмотреть услуги</a>
                     </div>     
                </section>
-               <section class="box-projects">
+               <section class="projects">
                     <div class="container">
                          <h2 id="projects">ПРОЕКТЫ</h2>
                          <ul class="box">
@@ -84,7 +84,7 @@
                                    <a class="box__link" href="https://sosnovo-lakes.ru/" target="_blank">Подробнее →</a>
                               </li>
                          </ul>
-                         <a class="box-projects__button" href="#projects">Смотреть все проекты</a>
+                         <a class="projects__button" href="#projects">Смотреть все проекты</a>
                     </div>     
                </section>     
                     
@@ -136,7 +136,7 @@
                     <div class="container">
                          <h2>Отзывы</h2>
                          <div class="reviews">
-                              <div class="reviews__feed-review">
+                              <div class="reviews__review">
                                    <h4 class="reviews__username">Ксения, проект 65 кв.м.</h4>
                                    <p class="reviews__description">Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим и даже больше! <br>
 
@@ -144,14 +144,14 @@
                                         
                                    </p>
                               </div>
-                              <div class="reviews__feed-review">
+                              <div class="reviews__review">
                                    <h4 class="reviews__username">Регина, проект 89 кв.м.</h4>
                                    <p class="reviews__description">Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера! <br>
 
-                                       <br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
+                                        <br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
                                    </p>
                               </div>
-                              <div class="reviews__feed-review">
+                              <div class="reviews__review">
                                    <h4 class="reviews__username">Яна, проект 120 кв.м.</h4>
                                    <p class="reviews__description">Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим. <br>
 
@@ -161,28 +161,91 @@
                          </div>
                     </div>
                </section>
-               
-               <!--<section class="section-full-screen">
-                    <div  class="full-screen">
-                         <h3 class="full-screen__text">Проект  Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
+               <section class="gallery">
+                    <div class="gallery__title-wrapper">
+                         <div class="container">
+                              <h2 class="gallery__title">галерея проектов</h2>
+                         </div>
+                    </div>
+                    <div class="gallery__slides">
+                         <div class="gallery__slide gallery__slide_active">
+                              <div class="slide bed">
+                                   <div class="container">
+                                        <h3 class="gallery__slide-title">Проект Двухкомнатной<br> квартиры в ЖК Лесной Пейзаж</h3>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="gallery__slide ">
+                              <div class="slide yellow-armchair">
+                                   <div class="container">
+                                        <h3 class="gallery__slide-title">Проект гостиной в ЖК Маяк</h3>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="gallery__slide ">
+                              <div class="slide living">
+                                   <div class="container">
+                                        <h3 class="gallery__slide-title">Визуализация кухни-гостиной<br> в частном доме</h3>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="gallery__slide ">
+                              <div class="slide scandinavian">
+                                   <div class="container">
+                                        <h3 class="gallery__slide-title">Проект кухни в скандинавском<br> стиле для ЖК Северный Ветер</h3>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="gallery__control-wrapper">
+                         <div class="container">
+                              <div class="gallery__controls">
+                                   <button class="gallery__control-prev">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/vector_left_mobile.png">
+                                             <img src="resources/vector_left.png" alt="button left">
+                                        </picture>
+                                   </button>
+                                   <button class="gallery__control-next">
+                                        <picture>
+                                             <source media="(max-width: 767px)" srcset="resources/vector_right_mobile.png">
+                                             <img src="resources/vector_right.png" alt="button right" >
+                                        </picture>
+                                        
+                                   </button>
+                              </div>
+                         </div>
                     </div>
                </section>
+
                <section class="contacts">
-                    <h2 id="contacts">КОНТАКТЫ</h2>
-                    <div class="contacts__links">
-                         <a href="tel:+79358954535">+7 935 895-45-35</a>
-                         <a href="mailto:hello@mail.com">hello@mail.com</a>
+                    <div class="container">
+                         <h2 id="contacts">КОНТАКТЫ</h2>
+                         <div class="contacts__links">
+                              <a class="tel" href="tel:+79358954535">+7 935 895-45-35</a>
+                              <a class="mail" href="https://t.me/Bulat_69" target="_blank">hello@mail.com</a>
+                         </div>
                     </div>
-               </section>-->
+                    
+               </section>
           </main>
-          <!--<footer>
-               <div class="basement-nav">
-                    <a href="#about-us" class="basement-nav__link bas-nav-link">О НАС</a>
-                    <a href="#all-projects" class="basement-nav__link">ПРОЕКТЫ</a>
-                    <a href="#services" class="basement-nav__link">УСЛУГИ</a>
-                    <a href="#contacts" class="basement-nav__link">КОНТАКТЫ</a>
+          <footer>
+               <div class="container">
+                    <div class="basement-wrapper">
+                         <nav class="basement-nav">
+                              <a href="#about-us" class="basement-nav__link bas-nav-link">О НАС</a>
+                              <a href="#all-projects" class="basement-nav__link">ПРОЕКТЫ</a>
+                              <a href="#services" class="basement-nav__link">УСЛУГИ</a>
+                              <a href="#contacts" class="basement-nav__link">КОНТАКТЫ</a>
+                         </nav>
+                    </div>
+                    <p id="basement" class="basement-text">студия дизайна интерьера Метрика — 2023</p>
                </div>
-               <p id="basement" class="basement-text">студия дизайна интерьера Метрика — 2023</p>
-          </footer>-->
+          </footer>
+
+          <section>
+               <script src="gallery.js"></script>
+          </section>
+
      </body>
 </html>
