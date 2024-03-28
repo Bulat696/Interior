@@ -38,17 +38,6 @@ footer {
     opacity: 0.5;
 }
 
-/*
-.bas-nav-link {
-    margin-left: 6px;
-    margin-right: 0;
-}
-
-.basement-nav__link:last-child {
-    margin-right: 17px;
-}
-*/
-
 @media (max-width: 767px) {
 
     .basement-wrapper {
@@ -70,13 +59,4 @@ footer {
         font-size: 13px;
         line-height: 18px;
     }
-/*
-    .bas-nav-link {
-        margin-left: 0;
-    }
-
-    .basement-nav__link:last-child {
-        margin-right: 0;
-    }
-    */
 }
