@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(popup.css);
 @import url(footer.css);
 
 html {
@@ -22,6 +23,8 @@ a {
 }  
 
 .nav__link,
+.popup__title,
+.popup__description,
 .about__button,
 .projects__button,
 .basement-text {
@@ -105,7 +108,7 @@ h3 {
 /*ПРОЕКТЫ*/
 
 .projects {
-    margin-bottom: 150px;
+    margin-bottom: 148px;
 }
 
 .box__image {
@@ -128,7 +131,7 @@ h3 {
     margin-top: 90px;
 }
 
-.box:first-child {
+.box__project:first-child {
     margin-top: 0;
 } 
 
@@ -170,25 +173,24 @@ h3 {
 }
 
 .h2 {
-    margin-bottom: 33px;
     margin-left: 2px;
     color: #fff;
 }
 
 .services__service {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
     width: calc(50% - 5px);
 }
 
 .services__img {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .services__price {
     position: absolute;
-    top: 32px;
-    left: 30px;
+    top: 34px;
+    left: 31px;
     padding: 5px 20px;
     font-size: 22px;
     line-height: 30px;
@@ -206,6 +208,7 @@ h3 {
     display: inline-block;
     margin-top: 24px;
     padding: 56px 0;
+    cursor: pointer;
     width: 100%;
     font-size: 30px;
     line-height: 41px;
@@ -231,7 +234,7 @@ h3 {
 .reviews {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 78px 45px;
 }
 
 .reviews__review {
@@ -317,14 +320,14 @@ h3 {
 
 .gallery__control-wrapper {
     position: absolute;
-    bottom: 162px;
+    bottom: 158px;
     width: 100%;
 }
 
 .gallery__control-next,
 .gallery__control-prev {
-    margin-right: 14px;
-    padding: 3px 10px;
+    margin-right: 26px;
+    padding: 3px 2px;
     cursor: pointer;
     border: none;
     background: none;
@@ -339,7 +342,7 @@ h3 {
 
 .contacts {
     margin-top: 150px;
-    margin-bottom: 152px;
+    margin-bottom: 149px;
 }
 
 .contacts__links {
@@ -356,7 +359,7 @@ h3 {
     content: '';
     display: block;
     position: absolute;
-    top: -46px;
+    top: -49px;
     margin-left: -4px;
     width: 24px;
     height: 24px;
