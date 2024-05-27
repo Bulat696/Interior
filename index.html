@@ -18,28 +18,27 @@
           <header class="header">
                <div class="container">
                     <div class="header-inner">
-                         <a href="#basement"><img class="logo" src="resources/Метрика.png" alt="логотип сайта Метрика"></a>
+                         <a href="#hero__box"><img class="logo" src="resources/Метрика.png" alt="логотип сайта Метрика"></a>
                          <nav class="nav">
-                              <a href="#about-us" class="nav__link">О НАС</a>
-                              <a href="#all-projects" class="nav__link">ПРОЕКТЫ</a>
+                              <a href="#about" class="nav__link">О НАС</a>
+                              <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
                               <a href="#services" class="nav__link">УСЛУГИ</a>
                               <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
                          </nav>
-                         <button class="burger-btn js-burger-btn">
-                              <img src="resources/icon-cross-burger.png" alt="">
-                         </button>
+                         <button class="burger-btn js-burger-btn"></button>
                     </div>
                </div>
+               
                <div class="burger js-burger">
-                    <div class="burger__content js-burger__content">
-                         <a href="#basement"><img class="burger-logo" src="resources/Метрика-burger.png" alt="логотип сайта Метрика"></a>
+                    <div class="burger__content ">
+                         <a href="#hero__box"><img class="burger-logo" src="resources/Метрика-burger.png" alt="логотип сайта Метрика"></a>
                          <nav class="burger-nav">
-                              <span><a href="#about-us" class="burger-nav__link">О НАС</a></span>
-                              <span><a href="#all-projects" class="burger-nav__link">ПРОЕКТЫ</a></span>
+                              <span><a href="#about" class="burger-nav__link">О НАС</a></span>
+                              <span><a href="#projects" class="burger-nav__link">ПРОЕКТЫ</a></span>
                               <span><a href="#services" class="burger-nav__link">УСЛУГИ</a></span>
                               <span><a href="#contacts" class="burger-nav__link">КОНТАКТЫ</a></span>
                          </nav>
-                         <div class="burger__contacts">
+                         <div class="burger__contacts js-burger__content">
                               <p class="burger__title">для связи:</p>
                               <span><a class="burger__tel" href="tel:+79358954535">+7 935 895-45-35</a></span>
                               <span><a class="burger__mail" href="https://t.me/Bulat_69" target="_blank">hello@mail.com</a></span>
@@ -53,7 +52,7 @@
                          <h1 class="hero__title">
                               Современные и стильные <br> интерьеры для комфортной жизни
                          </h1>
-                         <div class="hero__box">
+                         <div id="hero__box" class="hero__box">
                               <p class="hero__text">
                                    Мы - команда квалифицированных дизайнеров и
                                    архитекторов, занимающихся разработкой и реализацией
@@ -272,8 +271,13 @@
                     <div class="container">
                          <h2 id="contacts">КОНТАКТЫ</h2>
                          <div class="contacts__links">
-                              <a class="tel" href="tel:+79358954535">+7 935 895-45-35</a>
-                              <a class="mail" href="https://t.me/Bulat_69" target="_blank">hello@mail.com</a>
+                              <div class="box-tel">
+                                   <a class="tel" href="tel:+79358954535">+7 935 895-45-35</a>
+                              </div>
+                              <div class="box-mail">
+                                   <a class="mail" href="https://t.me/Bulat_69" target="_blank">hello@mail.com</a>
+                              </div>
+                              
                          </div>
                     </div>
                     
@@ -283,8 +287,8 @@
                <div class="container">
                     <div class="basement-wrapper">
                          <nav class="basement-nav">
-                              <a href="#about-us" class="basement-nav__link bas-nav-link">О НАС</a>
-                              <a href="#all-projects" class="basement-nav__link">ПРОЕКТЫ</a>
+                              <a href="#about" class="basement-nav__link bas-nav-link">О НАС</a>
+                              <a href="#projects" class="basement-nav__link">ПРОЕКТЫ</a>
                               <a href="#services" class="basement-nav__link">УСЛУГИ</a>
                               <a href="#contacts" class="basement-nav__link">КОНТАКТЫ</a>
                          </nav>
@@ -292,7 +296,7 @@
                     <p id="basement" class="basement-text">студия дизайна интерьера Метрика — 2023</p>
                </div>
           </footer>
-
+     
           <section>
                <script src="burger.js"></script>
                <script src="popup.js"></script>
