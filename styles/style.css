@@ -12,12 +12,17 @@ body {
     background: #ffffff;
 }
 
+.body_fixed {
+    overflow: hidden;
+}
+
 h1,
 h2,
 h3,
 div,
 p,
-a {
+a,
+button {
     color: #121212;
     letter-spacing: -0.03em;
 }  
@@ -354,8 +359,8 @@ h3 {
     width: 990px;
 }
 
-.tel:before,
-.mail:before {
+.box-tel::before,
+.box-mail::before {
     content: '';
     display: block;
     position: absolute;
@@ -368,32 +373,28 @@ h3 {
     background-position: 50%;
 }
 
-.tel:before {
-    background-image: url(../resources/icon-phone.png);
-}
-
-.mail:before {
-    background-image: url(../resources/icon_email.png);
-}
-
-.contacts__links a {
+.tel,
+.mail {
     font-size: 60px;
     line-height: 60px;
     border-bottom: 2px solid transparent;
-    text-decoration:none;    
+    text-decoration:none;
 }
 
-.contacts__links a:hover {
+.tel:hover,
+.mail:hover {
     border-bottom: 2px solid #121212;
-    opacity:0.5
+    opacity:0.5;
 }
 
-/*.contacts__links a:last-child {
-    padding-top: 32px;
-    padding-bottom: 8px;
+.box-tel::before {
+    background-image: url(../resources/icon-phone.png);
 }
-display:block;
-*/
+
+.box-mail::before {
+    background-image: url(../resources/icon_email.png);
+}
+
 @media (max-width: 961px) {
 
     .container {
@@ -403,7 +404,6 @@ display:block;
     }
 
     h1 {
-        
         font-size: 50px;
     }
 
@@ -568,7 +568,8 @@ display:block;
         width: 730px;
     }
 
-    .contacts__links a {
+    .tel,
+    .mail {
         font-size: 45px;
     }
 
@@ -765,13 +766,7 @@ display:block;
         padding-left: 0;
     }
 
-    /*.bed {
-        background-image: url(../resources/double-bed_mobile.png);
-    }*/
-
     .gallery__control-wrapper {
-    
-
     bottom: 50%;
     padding-left: 0;
     }
@@ -801,26 +796,27 @@ display:block;
         width: 100%;
     }
 
-    .tel:before,
-    .mail:before {
+    .box-tel::before,
+    .box-mail::before {
         margin-left: 3px;
         width: 18px;
         height: 18px;
-        
     }
 
-    .tel:before {
+    .box-tel::before {
         top: -33px;
         background-image: url(../resources/icon-phone_mobile.png);
     }
 
-    .mail:before {
+    .box-mail::before {
         top: 65px;
         background-image: url(../resources/icon_email_mobile.png);
     }
     
-    .contacts__links a {
+    .tel,
+    .mail {
         font-size: 35px;
         line-height: 45.62px;
     }
+
 }
