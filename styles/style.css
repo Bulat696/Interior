@@ -32,6 +32,7 @@ button {
 .popup__description,
 .about__button,
 .projects__button,
+.dark-theme__button,
 .basement-text {
     text-align: center;
 }
@@ -53,7 +54,7 @@ button {
 .container {
     margin: 0 auto;
     padding: 0 15px;
-    width: 1180px;
+    max-width: 1180px;
 }
 
 h1 {
@@ -74,10 +75,13 @@ h3 {
     line-height: 41px;
 }
 
+.hero {
+    margin-bottom: 150px;
+}
+
 .hero__box {
     position: relative;
-    margin-bottom: 150px;
-    width: 1150px;
+    width: 100%;
     height: 500px;
     background: url(../resources/interior.png);
 }
@@ -101,7 +105,7 @@ h3 {
 .about__description {
     margin-bottom: 30px;
     margin-left: 3px;
-    width: 1048px;
+    max-width: 1048px;
     font-size: 45px;
     line-height: 61px;
 }
@@ -130,8 +134,16 @@ h3 {
     margin-bottom: 148px;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-bottom: 90px;
+}
+
 .box__image {
     margin-bottom: 14px;
+    width: 100%;
 }
 
 .box__title {
@@ -146,25 +158,13 @@ h3 {
     text-decoration: none;
 }
 
-.box__project {
-    margin-top: 90px;
-}
-
-.box__project:first-child {
-    margin-top: 0;
-} 
-
-.box {
-    margin-bottom: 90px;
-}
-
 .projects__button {
     color: #AD1818;
 }
 
 .projects__button:hover {
-    background-color: #AD1818;
     color: #FFFFFF;
+    background-color: #AD1818;
 }
 
 /*УСЛУГИ*/
@@ -172,7 +172,7 @@ h3 {
 .dark-theme {
     padding-top: 151px;
     padding-bottom: 150px;
-    min-width: max-content;
+    width: 100%;
     background-color: #121212;
 }
 
@@ -180,6 +180,8 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 77px;
+    margin-bottom: 104px;
 }
 
 .h2 {
@@ -189,12 +191,12 @@ h3 {
 
 .services__service {
     position: relative;
-    margin-bottom: 77px;
     width: calc(50% - 5px);
 }
 
 .services__img {
     margin-bottom: 23px;
+    width: 100%;
 }
 
 .services__price {
@@ -215,7 +217,6 @@ h3 {
 }
 
 .dark-theme__button {
-    margin-top: 24px;
     color: #fff;
     background: #AD1818;
     cursor: pointer;
@@ -353,7 +354,7 @@ h3 {
     flex-wrap: wrap;
     position: relative;
     margin-top: 74px;
-    width: 990px;
+    width: 100%;
 }
 
 .box-tel::before,
@@ -409,9 +410,11 @@ h3 {
         line-height: 34px;
     }
 
-    .hero__box {
+    .hero {
         margin-bottom: 120px;
-        width: 100%;
+    }
+
+    .hero__box {
         height: 400px;
         background-image: url(../resources/interior_tablet.png);
         background-repeat: no-repeat;
@@ -436,7 +439,7 @@ h3 {
 
     .about__description {
         margin-left: 5px;
-        width: 690px;
+        max-width: 690px;
         font-size: 35px;
         line-height: 48px;
     }
@@ -450,9 +453,10 @@ h3 {
     .projects {
         margin-bottom: 100px;
     }
-    
-    .box__image {
-        width: 100%;
+
+    .box {
+        gap: 80px;
+        margin-bottom: 100px;
     }
 
     .box__title {
@@ -463,23 +467,14 @@ h3 {
         margin-left: 2px;
     }
 
-    .box__project {
-        margin-top: 80px;
-    }
-
-    .box:first-child {
-        margin-top: 0;
-    }
-
-    .box {
-        margin-bottom: 100px;
-    }
-
     /*УСЛУГИ*/
 
     .dark-theme {
         padding-bottom: 120px;
-        min-width:auto;
+    }
+
+    .services {
+        margin-bottom: 80px;
     }
 
     .h2 {
@@ -605,8 +600,11 @@ h3 {
         line-height: 25px;
     }
 
-    .hero__box {
+    .hero {
         margin-bottom: 80px;
+    }
+
+    .hero__box {
         height: 304px;
         background-image: url(../resources/interior_mobile.png);
     }
@@ -631,7 +629,6 @@ h3 {
 
     .about__description {
         margin-left: 0;
-        width: 100%;
         font-size: 22px;
         line-height: 30px;
     }
@@ -652,6 +649,11 @@ h3 {
         margin-bottom: 80px;
     }
 
+    .box {
+        gap: 49px;
+        margin-bottom: 60px;
+    }
+
     .box__image {
         margin-bottom: 20px;
         max-height: 355px;
@@ -661,18 +663,6 @@ h3 {
         margin-bottom: 11px;
     }
 
-    .box__project {
-        margin-top: 49px;
-    }
-
-    .box:first-child {
-        margin-top: 0;
-    }
-    
-    .box {
-        margin-bottom: 60px;
-    }
-    
     /*УСЛУГИ*/
 
     .dark-theme {
@@ -680,12 +670,16 @@ h3 {
         padding-bottom: 80px;
     }
 
+    .services {
+        gap: 60px;
+        margin-bottom: 60px;
+    }
+
     .h2 {
         margin-bottom: 20px;
     }
 
     .services__service {
-        margin-bottom: 60px;
         width: 100%;
     }
 
