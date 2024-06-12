@@ -1,11 +1,11 @@
-footer {
+.footer {
     min-width: max-content;
     background-color: #121212;
-    
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 
 .basement-wrapper {
-    padding-top: 60px;
     padding-bottom: 87px;
 }
 
@@ -31,7 +31,6 @@ footer {
 }
 
 .basement-text {
-    padding-bottom: 30px;
     font-size: 20px;
     line-height: 27px;
     color: #FFF;
@@ -40,8 +39,12 @@ footer {
 
 @media (max-width: 767px) {
 
-    .basement-wrapper {
+    .footer {
         padding-top: 30px;
+        padding-bottom: 26px;
+    }
+
+    .basement-wrapper {
         padding-bottom: 41px;
     }
 
@@ -55,7 +58,6 @@ footer {
     }
 
     .basement-text {
-        padding-bottom: 26px;
         font-size: 13px;
         line-height: 18px;
     }
